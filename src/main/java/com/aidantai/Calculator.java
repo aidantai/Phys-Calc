@@ -1,6 +1,7 @@
 package com.aidantai;
 
 import java.util.*;
+import org.json.*;
 
 public final class Calculator {
     private Calculator() {
@@ -32,7 +33,7 @@ public final class Calculator {
 
         System.out.println("Enter the variable that you are trying to find: ");
         String fVar = keyboard.next().toLowerCase();
-        
+
         System.out.println(kinematics);
         keyboard.close();
     }
