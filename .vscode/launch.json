@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Calculator",
+            "request": "launch",
+            "mainClass": "com.aidantai.Calculator",
+            "projectName": "Phys-Calc"
+        }
+    ]
+}
