@@ -16,7 +16,7 @@ public final class Calculator {
         boolean kinematics = false;
 
         System.out.println("Welcome to the Physics Calculator!");
-        while(true) { // Determines if the problem is kinematics or projectile motion. Beware of while(true)
+        while(true) { // Determines if the problem is kinematics or projectile motion.
             System.out.println("Are you trying to solve a kinematics or projectiles problem?");
             String kinproj = keyboard.next().toLowerCase();
             if (kinproj.equals("kinematics")) {
@@ -32,8 +32,8 @@ public final class Calculator {
         }
 
         System.out.println("Enter the variable that you are trying to find: ");
-        String fVar = keyboard.next().toLowerCase();
-
+        String targetVariable = keyboard.next().toLowerCase();
+        
         System.out.println(kinematics);
         keyboard.close();
     }
