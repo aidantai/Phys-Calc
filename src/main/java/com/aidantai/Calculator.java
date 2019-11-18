@@ -1,9 +1,8 @@
 package com.aidantai;
 
-
 import java.util.*;
 import org.json.*;
-import com.aidantai.qscript.*;
+import org.qscript.*;
 
 public final class Calculator {
     private Calculator() {
@@ -32,7 +31,6 @@ public final class Calculator {
                 continue;
             }
         }
-
 
         System.out.println("Enter the variable that you are trying to find: ");
         String targetVariable = keyboard.next().toLowerCase();
