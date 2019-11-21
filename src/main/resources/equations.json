@@ -1,0 +1,6 @@
+{
+    "kinematics": [
+        "$a = $v*$t",
+        "$a = ($v^2-$Vnaught^2)/(2*$DeltaX)"
+    ]
+}
