@@ -16,8 +16,12 @@ public final class Calculator {
         ArrayList<String> equations = new ArrayList<String>();
         equations.add("a*t");
         equations.add("b*d");
-
-
+        Script script = new Script("a = 5; t = 4");
+        script.parse();
+        Script script2 = new Script("b = a; print(b)");
+        script2.parse();
+        script2.evaluate();
+        /*
         for (String eq : equations) {
             try { 
                 System.out.println(eq);
@@ -26,6 +30,7 @@ public final class Calculator {
                 System.out.println(e.getMessage()); 
             }
         }
+        */
     }
 }
 
