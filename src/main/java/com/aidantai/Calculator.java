@@ -13,10 +13,23 @@ public final class Calculator {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
+        ArrayList<String> equations = new ArrayList<String>();
+        equations.add("a*t");
+        equations.add("b*d");
 
-        Solver.evaluate("a = 1; 2 = Vnaught; println(Vnaught + ' cubed is ' + Vnaught^3) ");
 
-        /*
+        for (String eq : equations) {
+            try { 
+                System.out.println(eq);
+                Solver.evaluate(eq);
+            } catch(Exception e) {
+                System.out.println(e.getMessage()); 
+            }
+        }
+    }
+}
+
+/*
         Scanner keyboard = new Scanner(System.in);
         boolean kinematics = false;
 
@@ -42,5 +55,3 @@ public final class Calculator {
         System.out.println(kinematics);
         keyboard.close();
         */
-    }
-}
